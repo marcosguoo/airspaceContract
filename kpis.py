@@ -3,7 +3,7 @@ import csv
 from web3 import Web3
 
 # Connect to Alchemy
-alchemy_url = 'https://eth-sepolia.g.alchemy.com/v2/f5CCM-LCyz4LDgyXg_V6Ihw6MPaBGxvl'  # Replace with your Alchemy URL
+alchemy_url = 'https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY'
 w3 = Web3(Web3.HTTPProvider(alchemy_url))
 
 def fetch_block_data(block_number):
