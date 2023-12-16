@@ -7,7 +7,7 @@ from web3 import Web3
 last_tx_hash = None
 
 # Replace with your Alchemy endpoint and API key
-alchemy_endpoint = "https://eth-sepolia.g.alchemy.com/v2/f5CCM-LCyz4LDgyXg_V6Ihw6MPaBGxvl"
+alchemy_endpoint = "https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY"
 
 # Connect to Alchemy
 w3 = Web3(Web3.HTTPProvider(alchemy_endpoint))
