@@ -13,15 +13,15 @@ alchemy_endpoint = "https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY"
 w3 = Web3(Web3.HTTPProvider(alchemy_endpoint))
 
 # Replace with your contract address and ABI
-contract_address = "0xcBdA1230141F56E6f7c3d7DA5CCf6A899edFbD2e"
-owner_address = "0x8d3c36D37914691405F97C404B45d3FBB2126DAb"
+contract_address = ""
+owner_address = ""
 contract_abi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":False,"inputs":[{"indexed":False,"internalType":"address","name":"winner","type":"address"},{"indexed":False,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"AuctionEnded","type":"event"},{"anonymous":False,"inputs":[{"indexed":False,"internalType":"address","name":"bidder","type":"address"},{"indexed":False,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"BidPlaced","type":"event"},{"anonymous":False,"inputs":[{"indexed":False,"internalType":"address","name":"clearer","type":"address"},{"indexed":False,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"EmergencyClear","type":"event"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"bids","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"emergencyClear","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"endAuction","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"highestBid","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"highestBidder","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"placeBid","outputs":[],"stateMutability":"payable","type":"function"}]
 contract = w3.eth.contract(address=contract_address, abi=contract_abi)
 
 # Replace with your private key
-owner_private_key = "c4133c6262e78b9cc61bce9972c9c256a640cb5d9e205fb3e91f1bd395000324"
+owner_private_key = ""
 
-private_keys = ["84b4091e15267b50f6645d44bb96b4bc3179377daa2a8808b224d9f579be1cf1", "0ed7b2db696a63d09cfc3f1372d18b7edb019ce61a90907b2ebaba7b9d209ee6", "e0023eb49080755858a869113960ff7077c814201a2bc44ea5579686e27841ea", "873027b1d6b90ba91c01056abd2a344d2120a12eefd300adae90bb64817e263c", "ced74225be9e26fed49fd7384a21677b4a6217d479c2987e46df3f9494677a6f"]  # Add more private keys as needed
+private_keys = ["", "", "", "", ""]
 
 # Global variable to store tx_hash values
 tx_hashes = []
@@ -62,7 +62,7 @@ for private_key in private_keys:
     
 # print(f"tx_hash used: {last_tx_hash}")
 # api_url = "https://api-sepolia.etherscan.io/api"
-# api_key = "YU3XW5GSVTD9SHYTGWFQDMYQYTQG5IICA9"
+# api_key = ""
 
 # params = {
 #     "module": "transaction",
